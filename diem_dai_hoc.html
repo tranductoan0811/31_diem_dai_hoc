@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <style>
+  
+    form {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    }
+  
+    body {
+    background-color: lightblue;
+    }
+   
+    input {
+    display: inline-block;
+    margin-right: 10px;
+    height: 25px;
+    border-radius: 4px;
+    font-size: 20px;
+    text-align: center;
+    width: 240px;
+    font-weight: bold;
+    color: blue;
+    }
+    
+    label {
+      width: 240px;
+      display: inline-block;
+      text-align: left;
+      margin-left: 20px;
+    }
+  
+    select {
+      width: 240px;
+      height: 30px;
+      font-size: 14px;
+      border-radius: 4px;
+      color: blue;
+    } 
+  
+    button {
+    
+      margin-left: 20px;
+      color: blue;
+      font-size: 14px;
+    }
+    
+    </style>
+<heaD>
+
+  <h1 style="color: red;
+  margin-left: 20px;
+">TÍNH ĐIỂM ĐẠI HỌC KHỐI D</h1>
+
+</heaD>
+<body>
+  <form action="">
+    <fieldset style="width: 550px;">
+  <legend style="font-weight: bold;">FORM TÍNH ĐIỂM</legend>
+  
+  <label for="math_score">Điểm môn Toán : </label>
+  <input type="number" id="math" placeholder="Điểm môn Toán: "><br><br>
+
+  <label for="literature_score">Điểm môn Văn Học: </label>
+  <input type="number" id="liter" placeholder="Điểm môn Văn: "><br><br>
+
+  <label for="english_core">Điểm môn Anh Văn : </label>
+  <input type="number" id="eng" placeholder="Điểm môn Anh Văn: "><br><br>
+
+  <label for="">Chọn khu vực: </label>
+  <select id="area_score">
+    <option value="kv1">Khu Vực 1</option>
+    <option value="KV2_NT">Khu Vực 2-Nông thôn</option>
+    <option value="kv2">Khu Vực 2</option>
+    <option value="kv3">Khu Vực 3</option>
+
+  </select><br><br>
+
+  <p id="diemkv" style="margin-left: 20px;">Điểm khu vực</p><br>
+
+  <button type="button" onclick="tinhdiem();">Tính điểm</button>
+  
+  <p id="result" style="margin-left: 20px;
+                        font-size: 20px;
+                        color: red;
+                        font-weight: bold;
+  ">Tổng điểm của thí sinh</p>
+
+</body>
+
+
+
+</html>
+
+<script src="diem_dai_hoc.js"></script>
